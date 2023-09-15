@@ -12,11 +12,11 @@ function Header(props){
     }
 
     function openSignUp(){
-        window.location.href = 'signup';
+        window.location.href = '/signup';
     }
 
     function openSignIn(){
-        window.location.href = 'signin';
+        window.location.href = '/signin';
     }
 
     return (
