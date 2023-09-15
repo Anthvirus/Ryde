@@ -14,11 +14,6 @@ function App() {
             <Route path="/signup" element={<SignUp/>}/>            
         </Routes>
     </BrowserRouter>
-      // <div className="box-border p-0 m-0">
-      //       <SignUp/>
-      //         {/* <LandingPage/> */}
-      //         {/* <SignIn/> */}
-      // </div>
   );
 }
 
