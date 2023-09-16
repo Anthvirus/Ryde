@@ -19,7 +19,7 @@ function Offers(){
     return (
         Offer.map(({title, about}, index) => {
             return (
-            <div className="flex flex-col items-center p-6 shadow-md h-auto w-72 sm:w-80 lg:w-96 bg-neutral-600 text-slate-50">
+            <div className="flex flex-col items-center p-6 shadow-md h-auto w-72 sm:w-80 bg-neutral-600 text-slate-50">
                 <h1 className="my-3 text-lg lg:text-2xl uppercase font-extralight" key={index}>{title}</h1>
                 <p className="text-sm lg:text-lg">{about}</p>
             </div>)
