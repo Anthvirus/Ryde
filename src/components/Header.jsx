@@ -2,8 +2,11 @@ import React, {useState} from 'react';
 import NavbarMobile from "./NavbarMobile";
 import NavbarDesktop from "./NavbarDesktop";
 
+import {useNavigate} from 'react-router-dom';
+
 function Header(props){
     const[isVisible, toggleNavVisible] = useState(false);
+    const navigate = useNavigate();
 
     function toggleNav(){
         toggleNavVisible(prevValue => {
@@ -12,11 +15,11 @@ function Header(props){
     }
 
     function openSignUp(){
-        window.location.href = '/signup';
+        navigate('/signup');
     }
 
     function openSignIn(){
-        window.location.href = '/signin';
+        navigate('/signin');
     }
 
     return (
